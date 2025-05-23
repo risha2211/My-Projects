@@ -4,7 +4,7 @@
 Developed a robust Python-based geospatial application capable of visualizing and tracking any location worldwide using precise latitude and longitude coordinates. The project integrates multiple Python libraries to create an interactive, layered map with spatial analysis capabilities- all running locally or inside notebooks.
 
 ## Technologies & Tools Used  
-- **Python 3.6**: Core programming language during initial development.  
+- **Python 3.6**: Core programming language 
 - **Folium**: For creating interactive Leaflet.js maps with Python to render map tiles, markers, and popups.  
 - **Geopandas**: Extended Pandas for geospatial data handling to read, manipulate, and visualize shapefiles and GeoJSON data.  
 - **Shapely**: For geometric operations - buffering, intersection, and distance calculation on map features.  
