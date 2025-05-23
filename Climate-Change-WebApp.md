@@ -134,5 +134,15 @@ Awarded for specific milestones and behaviors:
 - 🎁 **Hostel Donation Drives**  
   Organized at semester-end for clothes, books, and electronics reuse among students.
 
+  ## 📊 Realistic Campus Targets
+
+| **Metric**              | **Target** | **Benchmark Institutes**                  |
+|-------------------------|------------|-------------------------------------------|
+| Waste Reduction         | 30%        | IIT Bombay: 30%, IIM A: 25%               |
+| Recycling Rate          | 60%        | IIT Madras: 60%, DU: 55%                  |
+| Student Engagement      | 75%        | Internal via events & posts               |
+| Energy Use Reduction    | 15%        | IISc: 10%, DU: 15%                         |
+
+
 
 
