@@ -284,7 +284,7 @@ After calculating the raw scores for each coordinate (X, Y, Z), it is essential 
 
 #### 1. **Normalization Process**
 
-- Normalize each coordinate score to a scale of **0 to 100** using min-max scaling:
+Normalize each coordinate score to a scale of **0 to 100** using min-max scaling:
   
 ```python
 def normalize_score(raw_score, min_score, max_score):
@@ -292,4 +292,34 @@ def normalize_score(raw_score, min_score, max_score):
         return 0  # Avoid division by zero if all scores are equal
     return ((raw_score - min_score) / (max_score - min_score)) * 100
 ```
+#### 2. **3D Coordinate Tuple**
+Each candidate is represented as a 3D point:
+```python
+candidate_coords = (x_normalized, y_normalized, z_normalized)
+```
 
+#### 3. **Visualization Techniques**
+Use `matplotlib` for interactive 3D scatter plots.
+```python
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# candidates_data: list of tuples (x, y, z)
+x_vals = [c[0] for c in candidates_data]
+y_vals = [c[1] for c in candidates_data]
+z_vals = [c[2] for c in candidates_data]
+
+ax.scatter(x_vals, y_vals, z_vals, c='blue', marker='o')
+
+ax.set_xlabel('Education Score (X)')
+ax.set_ylabel('Experience Score (Y)')
+ax.set_zlabel('Skills Score (Z)')
+
+plt.title('Candidate 3D Coordinate Visualization')
+plt.show()
+```
+
+ 
