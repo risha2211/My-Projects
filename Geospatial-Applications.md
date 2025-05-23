@@ -64,7 +64,7 @@ The coordinate data used in this project was sourced from publicly available dat
 ## Impact & Use Cases  
 - **Urban Planning**: Helps visualize infrastructure layouts and plan new developments based on spatial clustering.  
 - **Real-Time Tracking**: Forms the base for integrating live GPS feeds for delivery or transport tracking.  
-- **Logistics Optimization**: Assists courier and fleet systems in finding the most efficient delivery paths by identifying high-density zones.  
+- **Logistics Optimization**: Finding the most efficient delivery paths by identifying high-density zones.  
 - **Disaster Response**: Useful for identifying critical zones, shelters, and at-risk areas during natural calamities using geospatial overlays.
 
 
