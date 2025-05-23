@@ -58,4 +58,5 @@ HeatMap(heat_data).add_to(m)
 # Save map as HTML
 m.save('geospatial_map.html')
 ```
+![Image](https://github.com/user-attachments/assets/65ffa566-be90-4a9d-a63a-bfd89a626ec8)
 
