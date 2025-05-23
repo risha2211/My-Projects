@@ -118,6 +118,21 @@ Awarded for specific milestones and behaviors:
 - **Streak Keeper** – For maintaining consistent daily activity
 - **Eco Leader** – For organizing community events or drives
 - **Verified Achiever** – For highly rated, peer-verified submissions
+---
+## 🔁 Smart Waste & Reuse Programs
+
+- 📊 **Integration with Campus Waste Logs**  
+  Syncs with existing waste collection databases to track volume and type of waste.
+
+- 🗑️ **Smart Bin Support (Optional)**  
+  IoT-enabled bins using Arduino or Raspberry Pi to detect waste type, fill levels, and usage patterns.
+
+- 🔧 **DIY Repair Workshops & Digital Swap Boards**  
+  Promote repair culture through campus workshops.  
+  Virtual boards to list/exchange usable items (e.g., books, appliances, clothes).
+
+- 🎁 **Hostel Donation Drives**  
+  Organized at semester-end for clothes, books, and electronics reuse among students.
 
 
 
