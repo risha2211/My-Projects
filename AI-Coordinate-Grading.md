@@ -98,4 +98,6 @@ The education score is calculated from:
 ---
 
 🧮 **Final Education Score Calculation**:
+```python
 education_score = university_score + degree_score + branch_score + bonus_score
+```
