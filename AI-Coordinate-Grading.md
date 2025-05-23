@@ -327,6 +327,8 @@ plt.show()
 - Hiring managers can adjust filtering thresholds dynamically.
 - Automated dashboards can highlight outliers and potential matches.
 
+![Image](https://github.com/user-attachments/assets/fdbbe1d1-9b9a-4f0b-a50b-6e07bb79f3d4)
+
 ### Candidate Dashboard
 
 The Candidate Dashboard provides personalized insights into a candidate's profile based on their 3D coordinate scores (Education, Experience, Skills). It enables candidates to track their performance and receive actionable feedback for improvement.
