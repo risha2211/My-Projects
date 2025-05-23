@@ -1,16 +1,16 @@
-# Code of Duty — AI-Based Coordinate System for Candidate Grading
+# Code of Duty - AI-Based Coordinate System for Candidate Grading
 *Smart India Hackathon 2024*
 
 "Code of Duty" is an AI-powered recruitment intelligence system that evaluates, filters, and ranks job candidates based on a 3D coordinate model:
-- 📘 X-axis: **Education**
-- 💼 Y-axis: **Experience**
-- 🛠️ Z-axis: **Skills**
+- X-axis: **Education**
+- Y-axis: **Experience**
+- Z-axis: **Skills**
 
 This system parses CVs/resumes, scores each coordinate using NLP and custom logic, and visualizes candidates in 3D space. Recruiters can shortlist top candidates instantly while jobseekers gain actionable feedback to upskill.
 
 ---
 
-## 🧠 Core Idea
+## Core Idea
 
 We map every candidate into a 3D coordinate `(x, y, z)`:
 - `x` ➝ Education score based on degree, university tier, GPA, etc.
@@ -21,29 +21,29 @@ These coordinates are visualized and ranked for rapid, data-driven hiring.
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
-### 📥 Input & Resume Parsing
+### Input & Resume Parsing
 - **Upload**: PDF/DOCX resumes or direct form entry
 - **Libraries**:
   - `pdfminer.six`, `python-docx`: For text extraction
   - `spaCy`: For Named Entity Recognition (NER), lemmatization
   - `re`: To extract durations, years, etc.
 
-### ✨ NLP Pipeline
+### NLP Pipeline
 - Tokenization & Lemmatization
 - NER to pull out:
-  - 🎓 Universities
-  - 🏢 Companies
-  - 📚 Degrees & certifications
-  - 🛠️ Tools/Tech stack
+  - Universities
+  - Companies
+  - Degrees & certifications
+  - Tools/Tech stack
 - Extract years of experience and match job titles to domains
 
 ---
 
-## 📊 Coordinate Scoring System
+## Coordinate Scoring System
 
-### 🎓 X-axis (Education Score)
+### X-axis (Education Score)
 
 The education score is calculated from:
 
@@ -64,7 +64,7 @@ The education score is calculated from:
 
 ---
 
-#### 🎓 Degree Level (out of 25)
+#### Degree Level (out of 25)
 | Degree        | Score  |
 |---------------|--------|
 | Ph.D.         | 25     |
@@ -87,7 +87,7 @@ The education score is calculated from:
 
 ---
 
-#### 📜 Certifications & GPA Bonus (out of 15)
+#### Certifications & GPA Bonus (out of 15)
 - **Certifications**:
   - Industry-relevant (AWS, Azure, Coursera ML, etc.): +5 each (max 10)
 - **GPA Bonus**:
@@ -97,7 +97,7 @@ The education score is calculated from:
 
 ---
 
-🧮 **Final Education Score Calculation**:
+**Final Education Score Calculation**:
 ```python
 education_score = university_score + degree_score + branch_score + bonus_score
 ```
