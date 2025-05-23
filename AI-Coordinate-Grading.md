@@ -275,4 +275,21 @@ These are not mandatory, but help distinguish strong candidates from others.
 
 ```python
 skills_score = core_match + bonus_match + recency_confidence + tools_familiarity + certification_score
+```
+### Score Normalization & Visualization
+
+After calculating the raw scores for each coordinate (X, Y, Z), it is essential to normalize these values to a uniform scale for fair comparison and visualization.
+
+---
+
+#### 1. **Normalization Process**
+
+- Normalize each coordinate score to a scale of **0 to 100** using min-max scaling:
+  
+```python
+def normalize_score(raw_score, min_score, max_score):
+    if max_score == min_score:
+        return 0  # Avoid division by zero if all scores are equal
+    return ((raw_score - min_score) / (max_score - min_score)) * 100
+```
 
