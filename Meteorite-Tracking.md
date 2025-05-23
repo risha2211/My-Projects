@@ -17,10 +17,7 @@ Developed a Python-based data science project that tracks meteorite landings acr
 - **Data Cleaning**: Removed entries with null coordinate or mass values. 
 - **Geospatial Visualization**: Using Folium, generated a world map showing meteorite landing locations with mass-indicative marker sizes and popups showing the name, year, and mass of each meteorite.  
 - **Age Estimation**:  
-  - For meteorites with known carbon isotope ratios or approximated decay constants, implemented a simplified carbon dating function using the radiometric decay formula:  
-    \[
-    t = \frac{\ln(N_0 / N)}{\lambda}
-    \]  
+  - For meteorites with known carbon isotope ratios or approximated decay constants, implemented a simplified carbon dating function using the radiometric decay formula:    
     where `t` is the estimated age, `N_0` is the initial amount of carbon-14, `N` is the current amount, and `λ` is the decay constant.  
   - Decay constants were either sourced or approximated based on known half-life of C-14 (~5730 years).  
 - **Mass-to-Age Correlation**: Optional regression analysis was performed to identify any patterns between meteorite mass and estimated cosmic exposure time (age before atmospheric entry).  
