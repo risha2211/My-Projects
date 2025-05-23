@@ -44,7 +44,7 @@ These coordinates are visualized and ranked for rapid, data-driven hiring.
 ## 📊 Coordinate Scoring System
 
 ### 🎓 X-axis (Education Score)
-```python
+
 The education score is calculated from:
 
 1. **University Tier (out of 40)**
@@ -98,6 +98,4 @@ The education score is calculated from:
 ---
 
 🧮 **Final Education Score Calculation**:
-
-```python
 education_score = university_score + degree_score + branch_score + bonus_score
