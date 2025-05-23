@@ -177,26 +177,26 @@ By combining technology, gamification, and community, it transforms everyday hab
 ## 🌐 WEB Sneak Peak
 
 ![Image](https://github.com/user-attachments/assets/e890532a-30ff-448a-94d3-a2753b8348ed)
+[Index](./C0FUTR_LINKS/index.html) 
 
 ![Image](https://github.com/user-attachments/assets/8a049704-8e91-40a0-a300-1c9bfd2c1141)
+[Wallet](./C0FUTR_LINKS/wallet.html) 
 
 ![Image](https://github.com/user-attachments/assets/66e605ae-9e34-4c3c-a0be-3f07430afbc7)
+[Games](./C0FUTR_LINKS/gamification.html)  
 
 ![Image](https://github.com/user-attachments/assets/7804ace6-df15-4a71-b4ef-9386f16966f2)
+[Portfolio](./C0FUTR_LINKS/portfolio.html) 
 
 ![Image](https://github.com/user-attachments/assets/ec4a4c9e-492f-44b5-bd80-8224a0de1074)
+[Eco-Tasks](./C0FUTR_LINKS/eco-task.html)
 
 ![Image](https://github.com/user-attachments/assets/cb952c15-6bc1-4545-a49d-511062db21ca)
+[Rewards](./C0FUTR_LINKS/rewards.html)
 
 ![Image](https://github.com/user-attachments/assets/4ccc5228-6e0c-4ec8-893e-bedba2270e3b)
+[Challenges](./C0FUTR_LINKS/community-challenges.html)
 
-- [Index](./C0FUTR_LINKS/index.html)  
-- [Wallet](./C0FUTR_LINKS/wallet.html)  
-- [Games](./C0FUTR_LINKS/gamification.html)  
-- [Portfolio](./C0FUTR_LINKS/portfolio.html)  
-- [Eco-Tasks](./C0FUTR_LINKS/eco-task.html)  
-- [Rewards](./C0FUTR_LINKS/rewards.html)  
-- [Challenges](./C0FUTR_LINKS/community-challenges.html)  
 
 
 
