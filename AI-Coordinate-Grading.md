@@ -101,3 +101,92 @@ The education score is calculated from:
 ```python
 education_score = university_score + degree_score + branch_score + bonus_score
 ```
+
+### Y-axis (Experience Score)
+
+The experience score evaluates the depth, relevance, and quality of a candidate’s industry exposure. It is composed of:
+
+1. **Company Tier & Reputation (out of 30)**
+2. **Total Work Experience (out of 25)**
+3. **Domain Relevance (out of 25)**
+4. **Seniority & Impact (out of 10)**
+5. **Continuity / Gap Penalty & Recency Bonus (out of 10)**
+
+---
+
+#### Company Tier & Reputation (out of 30)
+
+| Tier        | Examples                                  | Score     |
+|-------------|-------------------------------------------|-----------|
+| Tier 1      | FAANG, Big Tech (Google, Amazon, Meta), MNCs (McKinsey, Goldman Sachs, etc.) | 25–30     |
+| Tier 2      | Funded startups, mid-size tech firms, national giants (Infosys, TCS, etc.) | 18–24     |
+| Tier 3      | Small startups, local orgs, academic projects | 10–17     |
+| Freelance/Open Source | Depends on impact, team size, visibility | Variable (5–25) |
+
+- Scores may be averaged or weighted if multiple companies are involved.
+
+---
+
+#### Total Work Experience (out of 25)
+
+| Duration         | Score     |
+|------------------|-----------|
+| >6 years         | 22–25     |
+| 3–6 years        | 18–21     |
+| 1–3 years        | 13–17     |
+| <1 year          | 8–12      |
+| Internships only | 5–7       |
+
+- Part-time roles and freelance stints are prorated.
+- Teaching Assistant (TA) or research assistant roles may count for partial credit.
+
+---
+
+#### Domain Relevance (out of 25)
+
+How aligned is the candidate's past work with the target job's technical/domain requirements?
+
+| Relevance Level     | Description                                            | Score     |
+|---------------------|--------------------------------------------------------|-----------|
+| Highly Relevant     | Direct match (e.g., ML Engineer → ML role)             | 22–25     |
+| Moderately Relevant | Some overlap, transferable skills                      | 15–21     |
+| Minimally Relevant  | Little overlap, general exposure                       | 8–14      |
+| Irrelevant          | Unrelated domains                                      | ≤7        |
+
+- Keywords matched via NLP + semantic similarity
+- Role-based weight adjustments
+
+---
+
+#### Seniority & Impact (out of 10)
+
+| Impact Level          | Examples                                              | Score     |
+|------------------------|-------------------------------------------------------|-----------|
+| Leadership Roles       | Tech Lead, Product Owner, Manager                     | 8–10      |
+| IC with Impact         | Delivered major modules, owned features               | 5–7       |
+| Contributor            | Assisted teams, worked under supervision              | 2–4       |
+| Intern/Junior Level    | Little autonomy, learning stage                       | 0–2       |
+
+- Bonus points for patents, open-source leadership, published papers, or awards
+
+---
+
+#### Continuity, Gaps, and Recency (out of 10)
+
+| Attribute                 | Scoring Notes                                     | Score     |
+|--------------------------|---------------------------------------------------|-----------|
+| No gaps, recent work     | Continuous employment, past year active           | 8–10      |
+| Small gaps               | <6 months, well justified                         | 5–7       |
+| Gaps 6–12 months         | Partial penalty                                   | 3–4       |
+| >1 year gap, no projects | Heavy penalty unless exceptional reason given     | 0–2       |
+
+- Recency bonus: +1–2 for recent, relevant job within last 12 months
+- Side projects or academic activity may compensate partially
+
+---
+
+### Final Experience Score Calculation:
+
+```python
+experience_score = company_score + duration_score + domain_score + seniority_score + continuity_score
+```
