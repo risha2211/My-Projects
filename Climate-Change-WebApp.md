@@ -143,6 +143,15 @@ Awarded for specific milestones and behaviors:
 | Student Engagement      | 75%        | Internal via events & posts               |
 | Energy Use Reduction    | 15%        | IISc: 10%, DU: 15%                         |
 
+## 💸 Institutional Savings & Impact
+
+| **Institute**       | **Savings Achieved** | **Methods Used**                    |
+|---------------------|----------------------|-------------------------------------|
+| IIT Bombay          | ₹1.5 Cr/year         | Energy audits, renewables           |
+| Delhi University    | ₹2.5 Cr/year         | Waste reforms, awareness            |
+| IISc Bangalore      | ₹1.2 Cr/year         | Smart metering, policies            |
+
+
 
 
 
