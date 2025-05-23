@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet - Somaiya Green</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.shiksha.com/mediadata/images/1676831391php78EVyD.jpeg') no-repeat center center fixed; /* Replace with your college image URL */
+      background-size: cover;
+      color: #ffffff;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* Overlay for better text visibility */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #e50914;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #e50914;
+    }
+
+    /* Wallet Section */
+    .wallet-section {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: rgba(34, 34, 34, 0.8);
+      width: 80%;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .wallet-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .wallet-section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .wallet-details {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .wallet-details p {
+      margin-bottom: 1rem;
+    }
+
+    .wallet-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .wallet-buttons button {
+      padding: 1rem 2rem;
+      background-color: #9b59b6; /* Purple button */
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .wallet-buttons button:hover {
+      background-color: #8e44ad;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Somaiya Green</div>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="rewards.html">🌱 Rewards</a>
+      <a href="gamification.html">🏆 Gamification</a>
+      <a href="portfolio.html">📁 Portfolio</a>
+      <a href="achievement.html">🏆 Achievements</a>
+      <a href="wallet.html" class="active">💰 Wallet</a>
+    </nav>
+  </header>
+
+  <section class="wallet-section">
+    <h2>Your Climate Wallet</h2>
+    <p>Track your earned Climate Coins and Crypto earnings!</p>
+
+    <div class="wallet-details">
+      <p><strong>Current Balance:</strong> 120 Climate Coins</p>
+      <p><strong>Crypto Earned:</strong> 0.05 BTC</p>
+      <p><strong>Crypto Value (in Rupees):</strong> ₹100,000</p>
+      <p><strong>Rewards Earned:</strong> 3 Badges, 1 Workshop Attended</p>
+    </div>
+
+    <div class="wallet-buttons">
+      <button type="button">Withdraw Climate Coins</button>
+      <button type="button">View Crypto Portfolio</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Somaiya Green - All rights reserved</p>
+  </footer>
+</body>
+</html>

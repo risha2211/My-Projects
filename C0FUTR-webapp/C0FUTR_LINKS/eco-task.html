@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Eco-Friendly Tasks - Somaiya Green</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://your-college-image-url.com') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* Overlay for better text visibility */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #e50914;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #e50914;
+    }
+
+    /* Eco Task Section */
+    .eco-task-section {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: rgba(34, 34, 34, 0.8);
+      width: 80%;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .eco-task-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .eco-task-section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .eco-task-section input[type="checkbox"] {
+      margin-right: 1rem;
+    }
+
+    .eco-task-section input[type="file"] {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      background: #e50914;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .eco-task-section input[type="file"]:hover {
+      background: #b20710;
+    }
+
+    .eco-task-section button {
+      padding: 0.5rem 2rem;
+      border: none;
+      border-radius: 5px;
+      background: #e50914;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .eco-task-section button:hover {
+      background: #b20710;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Somaiya Green</div>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="rewards.html">🌱 Rewards</a>
+      <a href="gamification.html">🏆 Gamification</a>
+      <a href="portfolio.html">📁 Portfolio</a>
+      <a href="achievement.html">🏆 Achievements</a>
+      <a href="wallet.html">💰 Wallet</a>
+    </nav>
+  </header>
+
+  <section class="eco-task-section">
+    <h2>Complete Eco-Friendly Tasks</h2>
+    <p>Check the task, upload an image, and once verified, you will earn Climate Coins!</p>
+    <form>
+      <!-- Task 1: E-waste Recycling -->
+      <label>
+        <input type="checkbox" id="task1Completed">
+        Recycle your e-waste and dispose of it properly.
+      </label>
+      <div id="imageUploadTask1" style="display: none; margin-top: 20px;">
+        <label for="ecoImage1">Upload Proof of Task:</label>
+        <input type="file" id="ecoImage1" name="eco-image-1" accept="image/*">
+        <button type="submit">Submit for Verification</button>
+      </div>
+
+      <!-- Task 2: Planting Trees -->
+      <label>
+        <input type="checkbox" id="task2Completed">
+        Plant a tree in your locality or garden.
+      </label>
+      <div id="imageUploadTask2" style="display: none; margin-top: 20px;">
+        <label for="ecoImage2">Upload Proof of Task:</label>
+        <input type="file" id="ecoImage2" name="eco-image-2" accept="image/*">
+        <button type="submit">Submit for Verification</button>
+      </div>
+
+      <!-- Task 3: Reduce Plastic Use -->
+      <label>
+        <input type="checkbox" id="task3Completed">
+        Reduce plastic usage and switch to reusable alternatives.
+      </label>
+      <div id="imageUploadTask3" style="display: none; margin-top: 20px;">
+        <label for="ecoImage3">Upload Proof of Task:</label>
+        <input type="file" id="ecoImage3" name="eco-image-3" accept="image/*">
+        <button type="submit">Submit for Verification</button>
+      </div>
+
+      <!-- Task 4: Save Water -->
+      <label>
+        <input type="checkbox" id="task4Completed">
+        Save water by reducing wastage and using water-saving devices.
+      </label>
+      <div id="imageUploadTask4" style="display: none; margin-top: 20px;">
+        <label for="ecoImage4">Upload Proof of Task:</label>
+        <input type="file" id="ecoImage4" name="eco-image-4" accept="image/*">
+        <button type="submit">Submit for Verification</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Somaiya Green - All rights reserved</p>
+  </footer>
+
+  <script>
+    // Task 1 Image Upload Toggle
+    document.getElementById('task1Completed').addEventListener('change', function () {
+      const imageUploadTask1 = document.getElementById('imageUploadTask1');
+      if (this.checked) {
+        imageUploadTask1.style.display = 'block';
+      } else {
+        imageUploadTask1.style.display = 'none';
+      }
+    });
+
+    // Task 2 Image Upload Toggle
+    document.getElementById('task2Completed').addEventListener('change', function () {
+      const imageUploadTask2 = document.getElementById('imageUploadTask2');
+      if (this.checked) {
+        imageUploadTask2.style.display = 'block';
+      } else {
+        imageUploadTask2.style.display = 'none';
+      }
+    });
+
+    // Task 3 Image Upload Toggle
+    document.getElementById('task3Completed').addEventListener('change', function () {
+      const imageUploadTask3 = document.getElementById('imageUploadTask3');
+      if (this.checked) {
+        imageUploadTask3.style.display = 'block';
+      } else {
+        imageUploadTask3.style.display = 'none';
+      }
+    });
+
+    // Task 4 Image Upload Toggle
+    document.getElementById('task4Completed').addEventListener('change', function () {
+      const imageUploadTask4 = document.getElementById('imageUploadTask4');
+      if (this.checked) {
+        imageUploadTask4.style.display = 'block';
+      } else {
+        imageUploadTask4.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

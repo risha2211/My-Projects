@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Somaiya Green</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #1e1e2f; /* Dark Background */
+      color: #ffffff;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #2b2b45;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .sidebar .logo {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #9b59b6; /* Purple Accent */
+      padding: 1.5rem 0;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .sidebar nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.2rem;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      background-color: #9b59b6;
+    }
+
+    .sidebar footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #aaaaaa;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      background-color: #2b2b45;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      margin-left: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #9b59b6;
+    }
+
+    /* Section */
+    .section {
+      padding: 2rem;
+      background-color: #1e1e2f;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #9b59b6;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #2b2b45;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      color: #9b59b6;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Chart Section */
+    .chart-container {
+      background-color: #2b2b45;
+      padding: 2rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .chart-placeholder {
+      height: 300px;
+      background: linear-gradient(135deg, #9b59b6, #1e1e2f);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2b2b45;
+      color: #9b59b6;
+      font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+
+    .action-buttons button {
+      background-color: #8e44ad;
+      color: #ffffff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .action-buttons button:hover {
+      background-color: #732d91;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">Somaiya Green</div>
+    <nav>
+      <a href="portfolio.html" class="active">📁 Portfolio</a>
+      <a href="achievements.html">🏆 Achievements</a>
+      <a href="wallet.html">💰 Wallet</a>
+      <a href="index.html">🏠 Home</a>
+      <a href="rewards.html">🌱 Rewards</a>
+      <a href="gamification.html">🎮 Gamification</a>
+    </nav>
+    <footer>
+      <p>&copy; 2024 Somaiya Green</p>
+    </footer>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Your Portfolio</h1>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="section" id="portfolio">
+      <h2>Track Your Eco-Impact</h2>
+      <div class="content">
+        <div class="card">
+          <h3>Impact Score</h3>
+          <p>1200 points - Keep up the great work!</p>
+        </div>
+        <div class="card">
+          <h3>Tasks Completed</h3>
+          <p>25 eco-friendly tasks completed this month.</p>
+        </div>
+        <div class="card">
+          <h3>Milestones Achieved</h3>
+          <p>3 major sustainability goals unlocked.</p>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <h3>Progress Chart</h3>
+        <div class="chart-placeholder">Chart Visualization Here</div>
+      </div>
+
+      <div class="action-buttons">
+        <button>Set New Goals</button>
+        <button>View Leaderboard</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Somaiya Green - All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
