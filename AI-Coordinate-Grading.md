@@ -321,5 +321,11 @@ ax.set_zlabel('Skills Score (Z)')
 plt.title('Candidate 3D Coordinate Visualization')
 plt.show()
 ```
+#### 4. **Use Cases of Visualization**
+- Recruiters can quickly identify clusters of top candidates.
+- Candidates can visualize their relative strengths and weaknesses.
+- Hiring managers can adjust filtering thresholds dynamically.
+- Automated dashboards can highlight outliers and potential matches.
+
 
  
