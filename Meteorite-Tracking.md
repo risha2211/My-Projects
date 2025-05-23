@@ -5,16 +5,16 @@ Developed a Python-based data science project that tracks meteorite landings acr
 
 ## Technologies & Tools Used  
 - **Python 3.6**: Core development language.  
-- **Pandas**: For cleaning, filtering, and preprocessing meteorite datasets.  
-- **Matplotlib & Seaborn**: To visualize spatial and temporal meteorite distribution patterns.  
+- **Pandas**
+- **Matplotlib & Seaborn**: For visualization
 - **Folium**: For rendering interactive maps of meteorite strike locations.  
-- **Datetime & NumPy**: For time parsing and numerical calculations.  
+- **Datetime & NumPy**: For time parsing and calculations.  
 - **SciPy**: Used for implementing the radiometric decay function for carbon dating.  
-- **Jupyter Notebooks**: Environment for development, visualization, and annotation.
+- **Google Collab**
 
 ## Architecture & Implementation Details  
-- **Dataset Source**: Utilized the public NASA meteorite landing dataset (available in CSV format), which contains fields such as `name`, `mass`, `year`, `reclat`, and `reclong`.  
-- **Data Cleaning**: Removed entries with null coordinate or mass values. Parsed year field into datetime objects for accurate temporal analysis.  
+- **Dataset Source**: Utilized the public NASA meteorite landing dataset (available in CSV format) containing `name`, `mass`, `year`, `reclat`, and `reclong`.  
+- **Data Cleaning**: Removed entries with null coordinate or mass values. 
 - **Geospatial Visualization**: Using Folium, generated a world map showing meteorite landing locations with mass-indicative marker sizes and popups showing the name, year, and mass of each meteorite.  
 - **Age Estimation**:  
   - For meteorites with known carbon isotope ratios or approximated decay constants, implemented a simplified carbon dating function using the radiometric decay formula:  
