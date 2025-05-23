@@ -64,3 +64,9 @@ for _, row in df.iterrows():
 
 m.save("meteorite_map.html")
 ```
+## Impact & Use Cases  
+- **Scientific Research**: Provided a base model for integrating radiometric analysis with geospatial tracking.  
+- **Educational Tool**: Used in classrooms to demonstrate decay modeling and Earth science data visualization.  
+- **Historical Studies**: Aids in understanding the temporal distribution of meteorites, their origins, and cosmic exposure ages.  
+- **Disaster Risk Insight**: Although rare, such a map can assist in identifying possible fall zones or high-impact areas.
+
