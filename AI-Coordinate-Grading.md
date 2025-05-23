@@ -413,6 +413,8 @@ This dashboard can be extended to include:
 - **Integration with the AI feedback engine for dynamic tips**  
   Generate personalized, context-aware advice using AI/LLM models to guide candidate growth.
 
+  ---
+
 ## Tech Stack Summary
 
 | Category            | Tools                                     | Purpose                                   |
