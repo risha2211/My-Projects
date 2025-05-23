@@ -261,7 +261,7 @@ These are not mandatory, but help distinguish strong candidates from others.
 
 | Certification Value    | Description                                        | Score     |
 |-------------------------|----------------------------------------------------|-----------|
-| Top-tier + Verified     | Google, Microsoft, Coursera (capstone), Kaggle 🥇  | 12–15     |
+| Top-tier + Verified     | Google, Microsoft, Coursera (capstone), Kaggle   | 12–15     |
 | Recognized Platforms    | Udemy, LinkedIn, Codeforces, internal MOOC        | 8–11      |
 | Entry-level/Incomplete  | Basic or generic quizzes                          | 4–7       |
 | No Certifications       | None provided                                     | 0–3       |
