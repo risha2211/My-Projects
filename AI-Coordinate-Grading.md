@@ -413,5 +413,19 @@ This dashboard can be extended to include:
 - **Integration with the AI feedback engine for dynamic tips**  
   Generate personalized, context-aware advice using AI/LLM models to guide candidate growth.
 
+## Tech Stack Summary
+
+| Category            | Tools                                     | Purpose                                   |
+|---------------------|---------------------------------------------------------|--------------------------------------------------|
+| Programming Language | Python 3.10                                             | Backend logic, AI/ML, API development             |
+| Backend Frameworks   | Flask / FastAPI                                         | REST API development, lightweight, performant     |
+| NLP & AI Libraries   | spaCy, nltk, gensim, Transformers / LLM APIs (optional) | Text processing, NER, semantic similarity, AI feedback |
+| Data Handling       | pandas, numpy                                           | Data manipulation, numerical computations          |
+| Machine Learning    | scikit-learn                                           | Clustering (K-Means), ranking algorithms           |
+| Database            | PostgreSQL + pgvector extension                         | Storage of candidate data, vector similarity search|
+| Cloud Storage       | AWS S3                                                 | Resume file uploads                                |
+| Frontend (Optional) | React.js, Plotly.js / matplotlib                        | Dashboard UI, 3D visualization                      |
+| DevOps & Infra      | Docker, CI/CD pipelines, AWS / GCP / Azure              | Containerization, deployment, scalable hosting     |
+| Miscellaneous       | Regular Expressions, Git/GitHub                          | Resume parsing, source control                      |
 
  
