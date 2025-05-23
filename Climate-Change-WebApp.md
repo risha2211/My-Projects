@@ -96,37 +96,13 @@ It helps users track eco-behaviors, take part in challenges, and build community
 - Anti-spam + media reuse checks
 - Encrypted user data + 2FA for admin access
 
----
+## 🏅 Rank & Reward System
 
-## 💡 Inspiration
-Institutions like **IIT Bombay**, **Delhi University**, and **IISc** have saved **₹1-2.5 Cr/year** through campus sustainability initiatives.  
-GREEN makes it fun, social, and scalable.
+| Tier      | Description                          |
+|-----------|--------------------------------------|
+| 🟫 Bronze  | Basic recycling (paper, plastic)     |
+| 🥈 Silver  | E-waste, battery recycling           |
+| 🥇 Gold    | Donating items, upcycling            |
+| 💎 Platinum | Leading campus-wide impact drives   |
 
----
-
-## 📌 Future Scope
-- Smart bin & e-waste integration (via Arduino/RPi)
-- Campus-wide leaderboards
-- Integration with attendance & sustainability credits
-- Climate hackathons and donation drives
-- ML-based task authenticity detection
-
----
-
-## 📸 Sneak Peek (coming soon!)
-> UI screenshots, sample dashboard, leaderboard mockup
-
----
-
-## 🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
-
----
-
-## 📜 License
-[MIT](LICENSE)
-
----
-
-## ✨ Let's Build a Greener Future, One Click at a Time.
 
