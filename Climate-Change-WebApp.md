@@ -134,7 +134,7 @@ Awarded for specific milestones and behaviors:
 - 🎁 **Hostel Donation Drives**  
   Organized at semester-end for clothes, books, and electronics reuse among students.
 
-  ## 📊 Realistic Campus Targets
+## 📊 Realistic Campus Targets
 
 | **Metric**              | **Target** | **Benchmark Institutes**                  |
 |-------------------------|------------|-------------------------------------------|
@@ -151,6 +151,28 @@ Awarded for specific milestones and behaviors:
 | Delhi University    | ₹2.5 Cr/year         | Waste reforms, awareness            |
 | IISc Bangalore      | ₹1.2 Cr/year         | Smart metering, policies            |
 
+## 🧭 Roadmap & Scalability
+
+### Pilot Phase (1 Campus)
+- Core features (tracking, challenges, leaderboards)
+- Moderate reward system and peer verification
+
+### Phase 2
+- ML-based photo verification
+- Smart bin integration
+- Offline QR-scan log-in for events & workshops
+
+### Phase 3
+- Regional leaderboard across campuses
+- Hackathons and community rewards
+- Integration with sustainability credits or attendance
+
+---
+
+## 🚀 Final Vision
+
+**GREEN (C0FUTR)** aims to become the digital foundation of campus climate action.  
+By combining technology, gamification, and community, it transforms everyday habits into powerful environmental movements.
 
 
 
