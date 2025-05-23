@@ -488,7 +488,7 @@ This dashboard can be extended to include:
 - **Modular and Scalable Architecture**  
   Enables easy maintenance, updates, and scaling as the platform grows in users and features.
 
-code-of-duty/
+```code-of-duty/
 │
 ├── parser/
 │   ├── resume_parser.py
@@ -503,8 +503,9 @@ code-of-duty/
 │   └── scatter_plot.py
 │
 ├── app/
-│   └── main.py      # Flask/FastAPI endpoints
+│   └── main.py          # Flask/FastAPI endpoints
 │
 ├── requirements.txt
 ├── README.md
 └── sample_resumes/
+```
