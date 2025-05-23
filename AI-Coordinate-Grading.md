@@ -489,6 +489,7 @@ This dashboard can be extended to include:
   Enables easy maintenance, updates, and scaling as the platform grows in users and features.
 
 ```code-of-duty/
+code-of-duty
 │
 ├── parser/
 │   ├── resume_parser.py
