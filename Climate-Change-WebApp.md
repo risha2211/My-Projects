@@ -105,4 +105,19 @@ It helps users track eco-behaviors, take part in challenges, and build community
 | 🥇 Gold    | Donating items, upcycling            |
 | 💎 Platinum | Leading campus-wide impact drives   |
 
+## 🏆 Achievement Titles & Badges
+
+### 🎖️ Progression Titles
+Users level up based on XP, integrity score, and peer-reviewed task quality:
+
+`Rookie` → `Rebel` → `Ranger` → `Rainmaker`
+
+### 🧩 Bonus Badges
+Awarded for specific milestones and behaviors:
+
+- **Streak Keeper** – For maintaining consistent daily activity
+- **Eco Leader** – For organizing community events or drives
+- **Verified Achiever** – For highly rated, peer-verified submissions
+
+
 
