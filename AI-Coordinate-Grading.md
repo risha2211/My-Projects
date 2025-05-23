@@ -327,5 +327,81 @@ plt.show()
 - Hiring managers can adjust filtering thresholds dynamically.
 - Automated dashboards can highlight outliers and potential matches.
 
+### Candidate Dashboard (Optional Frontend)
+
+The Candidate Dashboard provides personalized insights into a candidate's profile based on their 3D coordinate scores (Education, Experience, Skills). It enables candidates to track their performance and receive actionable feedback for improvement.
+
+---
+
+#### Features:
+
+- **View Personal 3D Coordinates and Scores**
+  - Displays normalized X, Y, Z scores visually.
+  - Interactive 3D graph showing candidate’s relative position among peers.
+
+- **Axis-wise Improvement Feedback**
+  - Highlights the weakest dimension(s) in the candidate’s profile.
+  - Provides detailed textual suggestions on how to improve each axis.
+
+- **AI-Generated Personalized Tips**
+  - Uses an LLM or rule-based system to generate actionable advice.
+  - Example:
+    > “To increase your Skills score (Z-axis), learn Django and deploy a project demonstrating your abilities.”
+
+---
+
+#### Example UI Components (React + Plotly)
+
+```jsx
+import React from 'react';
+import Plot from 'react-plotly.js';
+
+const CandidateDashboard = ({ candidateData }) => {
+  const { xScore, yScore, zScore, candidateId } = candidateData;
+
+  const feedback = () => {
+    if (zScore < 50) {
+      return "To increase your Skills score (Z-axis), learn Django and deploy a project demonstrating your abilities.";
+    }
+    // Add more conditions as needed
+    return "Keep up the great work!";
+  };
+
+  return (
+    <div>
+      <h2>Candidate Dashboard - {candidateId}</h2>
+      <Plot
+        data={[
+          {
+            x: [xScore],
+            y: [yScore],
+            z: [zScore],
+            type: 'scatter3d',
+            mode: 'markers',
+            marker: { size: 8, color: 'red' },
+          },
+        ]}
+        layout={{
+          width: 600,
+          height: 400,
+          title: 'Your 3D Coordinate Profile',
+          scene: {
+            xaxis: { title: 'Education (X)' },
+            yaxis: { title: 'Experience (Y)' },
+            zaxis: { title: 'Skills (Z)' },
+          },
+        }}
+      />
+      <div>
+        <h3>Feedback</h3>
+        <p>{feedback()}</p>
+      </div>
+    </div>
+  );
+};
+
+export default CandidateDashboard;
+```
+
 
  
