@@ -64,6 +64,8 @@ for _, row in df.iterrows():
 
 m.save("meteorite_map.html")
 ```
+![Image](https://github.com/user-attachments/assets/55ff8ef6-76ed-4d33-b501-6d72d86c6792)
+![Image](https://github.com/user-attachments/assets/14119fe2-6676-455e-8f1b-fcf1d5d3c553)
 ## Impact & Use Cases  
 - **Scientific Research**: Provided a base model for integrating radiometric analysis with geospatial tracking.  
 - **Educational Tool**: Used in classrooms to demonstrate decay modeling and Earth science data visualization.  
