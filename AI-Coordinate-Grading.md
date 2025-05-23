@@ -430,4 +430,61 @@ This dashboard can be extended to include:
 | DevOps & Infra      | Docker, CI/CD pipelines, AWS / GCP / Azure              | Containerization, deployment, scalable hosting     |
 | Miscellaneous       | Regular Expressions, Git/GitHub                          | Resume parsing, source control                      |
 
- 
+## Use Cases
+
+- **Recruitment at Scale**  
+  Automates initial candidate screening for organizations handling thousands of resumes daily, drastically reducing HR workload.
+
+- **Skill Gap Analytics**  
+  Allows jobseekers to identify their weaknesses by visualizing their scores on Education, Experience, and Skills axes, guiding targeted upskilling.
+
+- **Diversity Hiring**  
+  Supports transparent and data-driven filtering and clustering, helping to minimize unconscious bias when combined with fairness-aware algorithms.
+
+- **Custom Role Matching**  
+  Employers can tailor coordinate weightages (education, experience, skills) based on specific team or role requirements for precise candidate ranking.
+
+- **Candidate Feedback Loop**  
+  Provides actionable AI-generated suggestions to candidates to improve their profiles, fostering continuous professional development.
+
+---
+
+## Challenges
+
+- **Algorithmic Complexity**  
+  Parsing unstructured resumes accurately and extracting meaningful entities remains a non-trivial task prone to errors and noise.
+
+- **Ethical and Legal Risks**  
+  Ensuring fairness in AI models, preventing bias, and complying with data privacy regulations like GDPR require ongoing vigilance.
+
+- **Operational Risks**  
+  Incomplete, outdated, or inaccurate candidate data can lead to misleading scores and poor hiring decisions.
+
+- **Scalability and Performance**  
+  Processing large volumes of data efficiently, especially with real-time or near-real-time requirements, demands careful architecture and optimization.
+
+- **Maintaining Relevance**  
+  Continuous updating of skill keywords, company tiers, degree rankings, and model tuning is necessary to keep the system effective and fair.
+
+---
+
+## Success Factors
+
+- **High-Quality Resume Parsing**  
+  Robust NLP pipelines capable of handling diverse formats and noisy data ensure accurate feature extraction.
+
+- **Adaptive Scoring Algorithms**  
+  Transparent, customizable formulas that can be tuned per employer or industry maximize usefulness.
+
+- **Intuitive User Interface**  
+  Clear visualizations and feedback dashboards improve both recruiter decision-making and candidate engagement.
+
+- **Continuous Improvement via Feedback Loops**  
+  Incorporating user feedback and hiring outcomes to refine models and correct biases over time.
+
+- **Ethical and Legal Compliance**  
+  Integrating fairness metrics and adhering to privacy laws fosters trust and protects stakeholders.
+
+- **Modular and Scalable Architecture**  
+  Enables easy maintenance, updates, and scaling as the platform grows in users and features.
+
