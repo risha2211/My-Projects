@@ -1,4 +1,4 @@
-# Code of Duty - AI-Based Coordinate System for Candidate Grading
+# Code of Duty- AI-Based Coordinate System for Candidate Grading
 *Smart India Hackathon 2024*
 
 "Code of Duty" is an AI-powered recruitment intelligence system that evaluates, filters, and ranks job candidates based on a 3D coordinate model:
@@ -428,7 +428,7 @@ This dashboard can be extended to include:
 | Machine Learning    | scikit-learn                                           | Clustering (K-Means), ranking algorithms           |
 | Database            | PostgreSQL + pgvector extension                         | Storage of candidate data, vector similarity search|
 | Cloud Storage       | AWS S3                                                 | Resume file uploads                                |
-| Frontend (Optional) | React.js, Plotly.js / matplotlib                        | Dashboard UI, 3D visualization                      |
+| Frontend  | React.js, Plotly.js / matplotlib                        | Dashboard UI, 3D visualization                      |
 | DevOps & Infra      | Docker, CI/CD pipelines, AWS / GCP / Azure              | Containerization, deployment, scalable hosting     |
 | Miscellaneous       | Regular Expressions, Git/GitHub                          | Resume parsing, source control                      |
 
