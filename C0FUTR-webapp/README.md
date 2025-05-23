@@ -174,6 +174,18 @@ Awarded for specific milestones and behaviors:
 **GREEN (C0FUTR)** aims to become the digital foundation of campus climate action.  
 By combining technology, gamification, and community, it transforms everyday habits into powerful environmental movements.
 
+[Index](./C0FUTR_LINKS/index.html)  
+[Wallet](./C0FUTR_LINKS/wallet.html)
+[Games](./C0FUTR_LINKS/gamification.html)  
+[Portfolio](./C0FUTR_LINKS/portfolio.html)
+[Eco-Tasks](./C0FUTR_LINKS/eco-task.html)  
+[Rewards](./C0FUTR_LINKS/rewards.html)
+[Challenges](./C0FUTR_LINKS/community-challenges.html)  
+
+
+
+
+
 
 
 
