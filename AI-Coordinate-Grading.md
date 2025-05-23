@@ -488,3 +488,23 @@ This dashboard can be extended to include:
 - **Modular and Scalable Architecture**  
   Enables easy maintenance, updates, and scaling as the platform grows in users and features.
 
+code-of-duty/
+│
+├── parser/
+│   ├── resume_parser.py
+│   └── nlp_utils.py
+│
+├── scoring/
+│   ├── education.py
+│   ├── experience.py
+│   └── skills.py
+│
+├── visualizations/
+│   └── scatter_plot.py
+│
+├── app/
+│   └── main.py      # Flask/FastAPI endpoints
+│
+├── requirements.txt
+├── README.md
+└── sample_resumes/
