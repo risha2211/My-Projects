@@ -59,4 +59,12 @@ HeatMap(heat_data).add_to(m)
 m.save('geospatial_map.html')
 ```
 ![Image](https://github.com/user-attachments/assets/65ffa566-be90-4a9d-a63a-bfd89a626ec8)
+The coordinate data used in this project was sourced from publicly available datasets.
+
+## Impact & Use Cases  
+- **Urban Planning**: Helps visualize infrastructure layouts and plan new developments based on spatial clustering.  
+- **Real-Time Tracking**: Forms the base for integrating live GPS feeds for delivery or transport tracking.  
+- **Logistics Optimization**: Assists courier and fleet systems in finding the most efficient delivery paths by identifying high-density zones.  
+- **Disaster Response**: Useful for identifying critical zones, shelters, and at-risk areas during natural calamities using geospatial overlays.
+
 
