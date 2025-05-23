@@ -190,3 +190,89 @@ How aligned is the candidate's past work with the target job's technical/domain 
 ```python
 experience_score = company_score + duration_score + domain_score + seniority_score + continuity_score
 ```
+### Z-axis (Skills Score)
+
+The Skills Score represents how well a candidate's technical and soft skill set matches the target role. This includes not just keyword matches, but also contextual relevance, confidence of usage, and recency. The scoring is divided into:
+
+1. **Core Skill Match (out of 30)**
+2. **Bonus/Optional Skill Match (out of 20)**
+3. **Recency & Confidence (out of 20)**
+4. **Tooling & Tech Stack Familiarity (out of 15)**
+5. **Certifications & Assessments (out of 15)**
+
+---
+
+#### Core Skill Match (out of 30)
+
+| Match Quality        | Description                                                     | Score     |
+|----------------------|------------------------------------------------------------------|-----------|
+| Perfect Match         | All required skills matched with high usage confidence          | 25–30     |
+| Good Match            | Most required skills matched; confident in usage                | 18–24     |
+| Partial Match         | Few key skills missing, some unfamiliar tools                   | 10–17     |
+| Poor Match            | Major required skills missing or no evidence of usage           | ≤9        |
+
+- Extracted via NLP keyword + semantic matching
+- Weightage based on skill criticality to role
+
+---
+
+#### Bonus/Optional Skill Match (out of 20)
+
+These are not mandatory, but help distinguish strong candidates from others.
+
+| Bonus Match Level     | Examples                              | Score     |
+|------------------------|---------------------------------------|-----------|
+| Extensive Extras       | 3–4 strong bonus skills                | 16–20     |
+| Moderate Extras        | 1–2 bonus skills                      | 10–15     |
+| Minimal Extras         | Only basic extras                     | 5–9       |
+| None                   | No extras                             | 0–4       |
+
+- Includes soft skills (e.g., leadership, agile methodologies) and non-critical tech
+
+---
+
+#### Recency & Confidence (out of 20)
+
+| Confidence/Recency Level | Interpretation                                     | Score     |
+|---------------------------|----------------------------------------------------|-----------|
+| High & Recent             | Used in last 1 year + in multiple projects         | 17–20     |
+| Moderate                  | Used 1–2 years ago, or only in one context         | 11–16     |
+| Low                       | Mentioned in resume, but unclear experience level  | 5–10      |
+| Outdated or Unverified    | Skill listed but never actively used               | ≤4        |
+
+- Assessed via context parsing, frequency, and chronology from experience descriptions
+
+---
+
+#### Tooling & Tech Stack Familiarity (out of 15)
+
+| Familiarity Level     | Description                                      | Score     |
+|------------------------|--------------------------------------------------|-----------|
+| Deeply Familiar        | Tools/frameworks used end-to-end (e.g., Git, Docker, CI/CD) | 12–15     |
+| Moderate Familiarity   | Tools mentioned and used in minor capacity       | 7–11      |
+| Basic Mention Only     | Tools listed, but usage unclear or outdated      | 3–6       |
+| None                   | No tooling evidence                              | 0–2       |
+
+- Special attention to domain-relevant tools (e.g., TensorFlow for ML, Figma for UI/UX)
+
+---
+
+#### Certifications & Assessments (out of 15)
+
+| Certification Value    | Description                                        | Score     |
+|-------------------------|----------------------------------------------------|-----------|
+| Top-tier + Verified     | Google, Microsoft, Coursera (capstone), Kaggle 🥇  | 12–15     |
+| Recognized Platforms    | Udemy, LinkedIn, Codeforces, internal MOOC        | 8–11      |
+| Entry-level/Incomplete  | Basic or generic quizzes                          | 4–7       |
+| No Certifications       | None provided                                     | 0–3       |
+
+- Additional weight if directly related to the job description
+- Public portfolios and GitHub profiles may supplement
+
+---
+
+### Final Skills Score Calculation:
+
+```python
+skills_score = core_match + bonus_match + recency_confidence + tools_familiarity + certification_score
+
