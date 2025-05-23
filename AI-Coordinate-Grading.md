@@ -402,6 +402,16 @@ const CandidateDashboard = ({ candidateData }) => {
 
 export default CandidateDashboard;
 ```
+This dashboard can be extended to include:
+
+- **Historical score tracking**  
+  Track candidate progress over time with graphs and timelines.
+
+- **Skill-building resource links**  
+  Provide curated courses, tutorials, and projects tailored to improvement areas.
+
+- **Integration with the AI feedback engine for dynamic tips**  
+  Generate personalized, context-aware advice using AI/LLM models to guide candidate growth.
 
 
  
