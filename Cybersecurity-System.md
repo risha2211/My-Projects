@@ -28,7 +28,7 @@ These components are hashed into a secure profile and stored in a trusted, encry
 
 ### Why Integrate SSL Certificate Validation?
 
-SSL certificates are the digital trust badges of the internet—but they’re not foolproof. PhishHook actively verifies:
+SSL certificates are the digital trust badges of the internet but they’re not foolproof. PhishHook actively verifies:
 
 - Certificate authenticity and expiry  
 - Chain of trust and issuing authority  
