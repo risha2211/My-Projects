@@ -227,4 +227,17 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
 6. **Continuous Feedback:** Data collected is used to retrain AI models periodically and refine detection rules to reduce false positives.
 
 ---
+# Feasibility
 
+- **Scalable:** Utilizes AWS serverless services for efficient, real-time processing  
+- **Low Latency:** Focuses on monitoring only sensitive user actions, reducing overhead  
+- **AI-Driven Detection:** Improves phishing detection beyond traditional URL filters  
+- **Integration Ready:** Easily integrates with existing web security solutions like Zscaler and Cisco Umbrella  
+
+---
+
+# Potential Challenges & Solutions
+
+- **False Positives:** Continuous AI model training to improve accuracy over time  
+- **Cost Management:** Employs a serverless architecture to optimize pricing and resource usage  
+- **Compatibility:** Uses API-based integration for seamless compatibility with other security platforms  
