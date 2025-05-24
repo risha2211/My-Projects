@@ -187,7 +187,47 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
     - Fake captchas that don’t function correctly or are visually inconsistent.  
     - Hidden form fields or scripts designed to steal credentials.  
     - Suspicious pop-ups or modal dialogs not consistent with legitimate UX patterns.  
-  - Lambda will assign an anomaly score to each interaction and send flagged results downstream for processing.  
+  - Lambda will assign an anomaly score to each interaction and send flagged results downstream for processing.
+
+```python
+import boto3
+import requests
+
+def lambda_handler(event, context):
+    # Extract shortened URL from the event (e.g., from API Gateway)
+    short_url = event.get('short_url')
+    
+    # Expand shortened URL using a HEAD request to follow redirects
+    try:
+        response = requests.head(short_url, allow_redirects=True, timeout=5)
+        expanded_url = response.url
+    except Exception as e:
+        return {'statusCode': 500, 'body': f"Error expanding URL: {str(e)}"}
+    
+    # Simple keyword check for suspicious terms
+    suspicious_keywords = ['login', 'verify', 'reset', 'account', 'secure']
+    if any(keyword in expanded_url.lower() for keyword in suspicious_keywords):
+        alert = True
+    else:
+        alert = False
+    
+    # Optionally check domain reputation here (stubbed)
+    domain_reputation = check_domain_reputation(expanded_url)
+    
+    return {
+        'statusCode': 200,
+        'body': {
+            'expanded_url': expanded_url,
+            'suspicious': alert,
+            'domain_reputation': domain_reputation
+        }
+    }
+
+def check_domain_reputation(url):
+    # Placeholder: integrate with domain reputation APIs (e.g., VirusTotal, Google Safe Browsing)
+    # For demo, return "clean"
+    return "clean"
+```
 
 ---
 
