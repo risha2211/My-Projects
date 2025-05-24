@@ -155,7 +155,7 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
 
 ---
 
-# Technologies Used and HOW We Will Use Them
+# Technologies Used and How We Will Use Them
 
 ### 1. AWS WAF (Web Application Firewall)
  
