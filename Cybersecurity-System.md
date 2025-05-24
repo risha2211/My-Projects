@@ -168,7 +168,7 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
   - Monitor only sensitive endpoints (e.g., `/login`, `/payment`) to reduce overhead and false alarms.  
   AWS WAF will also be configured to log all traffic metadata and blocked request details into CloudWatch Logs for audit and further analysis.
 
-```python
+```json
 {
     "Name": "BlockSuspiciousURLs",
     "Priority": 1,
@@ -258,7 +258,7 @@ def check_domain_reputation(url):
     # For demo, return "clean"
     return "clean"
 ```
-```
+```python
 from bs4 import BeautifulSoup
 
 def extract_ui_features(html_content):
