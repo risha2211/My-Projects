@@ -76,6 +76,6 @@ Phishing sites may replicate legitimate CAPTCHA systems to deceive users. String
 
 - **Zero Disruption to User Experience:**  
 - **Real-Time Alerts:**  
-- **Enhanced Detection of Subtle Phishing Attacks:**  
+- **Enhanced Detection of Subtle Phishing Attacks:**  hi
   
 
