@@ -54,7 +54,7 @@ Invalid, expired, or mismatched certificates immediately signal possible phishin
 
 PhishHook’s fingerprinting and certificate validation system doesn’t just stop phishing—it evolves faster than attackers can adapt. By placing behavior, structure, and trust under constant AI surveillance, we secure the web at its weakest points—before the first click goes wrong.
 
-## 2. 👻 Phantom Cyber-Space Overlay 
+## 👻 Phantom Cyber-Space Overlay 
 
 The Phantom Cyber-Space Overlay introduces an advanced and invisible layer of phishing protection that continuously shields users from attacks without disrupting their browsing experience. As users interact with a website, it works silently in the background, actively monitoring suspicious activities commonly associated with phishing attempts.
 
