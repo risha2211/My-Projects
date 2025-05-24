@@ -1,6 +1,6 @@
 # 🛡️ PhishHook – AI-Powered Cybersecurity System for Banks
 
-##Overview
+## Overview
 Phishing remains one of the most pervasive and devastating threats to modern banking systems. With attackers constantly refining their tactics, traditional defenses struggle to keep up. Financial institutions face increasingly sophisticated attacks involving behavioral mimicry, deceptive interfaces, and evolving social engineering methods. These phishing techniques bypass static filters, exploit human error, and compromise sensitive operations—leading to financial loss, customer distrust, and long-term reputational damage.
 
 **PhishHook** was built to meet a real and growing need in today’s banking world—staying ahead of cybercriminals who’ve become smarter, faster, and harder to catch. Instead of relying on outdated lists or rigid detection rules, PhishHook takes a more intelligent, adaptive approach to cybersecurity, one that understands how real users behave and how attackers try to imitate them.
