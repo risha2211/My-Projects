@@ -27,7 +27,7 @@ Manual counting of chikoo fruits in bags or crates is slow, prone to human error
 
 | Constraint                  | How Addressed                                |
 |----------------------------|---------------------------------------------|
-| Size  | Designed an enclosure to hold upto 130 chikoos.|
+| Size  | Designed an enclosure to hold upto 120 chikoos.|
 | Budget        | Kept costs low by selecting affordable components and using recycled scrap wood.  |
 | Environmental conditions         | urrently used in dry indoor settings; future versions may include waterproofing.   |
 | Sensor accuracy |Fine-tuned the image recognition model to handle variations in lighting and chikoo appearance by training it on 500+ images.|
@@ -121,7 +121,7 @@ Estimated number of chikoos: 130
 2. IR sensor detects each fruit passing through*.  
 3. ESP32 CAM captures images to confirm fruit recognition via ML.  
 4. Count increments on the LCD display in real-time.  
-5. When count reaches user-set or default max (130), buzzer sounds.  
+5. When count reaches user-set or default max (120), buzzer sounds.  
 6. Trapdoor closes to temporarily halt flow.  
 7. Operator retrieves counted fruits through the door.  
 8. Trapdoor reopens to resume operation.
@@ -145,5 +145,9 @@ Estimated number of chikoos: 130
 - Maintenance or after-sales service.
 
 ---
+
+### Timeline Chart
+[🔗 Project Timeline Gantt Chart](https://www.youtube.com/watch?v=nXjRacMawRo)
+
 
 
