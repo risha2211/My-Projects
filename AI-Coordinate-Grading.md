@@ -70,7 +70,7 @@ similarity_score = util.pytorch_cos_sim(embedding_candidate, embedding_job).item
 
 # Display result
 print(f"Semantic similarity between resume and JD: {similarity_score:.2f}")
-
+```
 
 ## Coordinate Scoring System
 
