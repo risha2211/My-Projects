@@ -1,5 +1,7 @@
 # Meteorite Tracking & Age Estimation
 
+*White Hat Jr.*
+
 ## Overview  
 Developed a Python-based data science project that tracks meteorite landings across the globe using geospatial coordinates, analyzes their carbon content where available, and approximates the age of the meteorites using carbon dating principles. The project integrates NASA’s open meteorite dataset with spatial mapping and analytical tools for a comprehensive study of meteor impact events and cosmic material aging.
 
