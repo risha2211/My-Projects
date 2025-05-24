@@ -41,6 +41,41 @@ These coordinates are visualized and ranked for rapid, data-driven hiring.
 
 ---
 
+## Semantic Skill Matching Using Pre-trained Embeddings
+
+To evaluate how well a candidate’s skills match the job description, we use **pre-trained sentence embedding models** such as:
+
+- [Sentence-BERT (`all-MiniLM-L6-v2`)](https://www.sbert.net/)
+- [Universal Sentence Encoder (USE)](https://tfhub.dev/google/universal-sentence-encoder/4)
+- [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) *(if available and permitted)*
+
+These models convert unstructured text into high-dimensional vectors. We compute **cosine similarity** between candidate skill vectors and job description skill vectors to assess semantic closeness.
+
+### Example: Python Code Using Sentence-BERT
+
+```python
+from sentence_transformers import SentenceTransformer, util
+
+# Load a lightweight pre-trained Sentence-BERT model
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+# Example candidate skills extracted from resume
+candidate_skills = "Python, Django, REST APIs, PostgreSQL"
+
+# Example job description skills
+job_description = "Looking for a backend developer with Django, API design, and SQL experience"
+
+# Generate sentence embeddings
+embedding_candidate = model.encode(candidate_skills, convert_to_tensor=True)
+embedding_job = model.encode(job_description, convert_to_tensor=True)
+
+# Compute cosine similarity
+similarity_score = util.pytorch_cos_sim(embedding_candidate, embedding_job).item()
+
+# Display result
+print(f"Semantic similarity between resume and JD: {similarity_score:.2f}")
+
+
 ## Coordinate Scoring System
 
 ### X-axis (Education Score)
