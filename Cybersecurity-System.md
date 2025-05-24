@@ -56,41 +56,26 @@ PhishHook’s fingerprinting and certificate validation system doesn’t just st
 
 ## 2. Universal Phishing Detection Using the Phantom Cyber-Space Overlay + String Matching & Homograph Attack Detection
 
-### Overview  
-The Phantom Cyber-Space Overlay introduces an advanced and invisible layer of phishing protection that continuously shields users from attacks without disrupting their browsing experience. As users interact with a website, this innovative technology works silently in the background, actively monitoring suspicious activities commonly associated with phishing attempts—such as URL redirections, deceptive forms, or unusual website behaviors. The key to Phantom Overlay’s effectiveness lies in its ability to detect and prevent threats like typosquatting, homograph attacks, and other subtle tactics by cybercriminals to impersonate legitimate websites.
+The Phantom Cyber-Space Overlay introduces an advanced and invisible layer of phishing protection that continuously shields users from attacks without disrupting their browsing experience. As users interact with a website, it works silently in the background, actively monitoring suspicious activities commonly associated with phishing attempts.
 
-Phishing often involves manipulating domain names through tactics like typosquatting, where attackers deliberately register misspelled or similar-looking domains, and homograph attacks, where visually identical characters from different alphabets are used to deceive users. For example, an attacker might register a domain like "Instagrarn" to impersonate "Instagram," or they might replace Latin letters with visually similar characters from Cyrillic or Greek alphabets. This tactic can be difficult for users to spot, but Phantom Overlay is designed to identify and thwart such deceptive activities in real-time.
-
-### How the Technology Works Together:
-
-- **Phantom Overlay in Action:**  
-  As users engage with a website, the Phantom Cyber-Space Overlay runs discreetly in the background, constantly monitoring behaviors indicative of phishing or malicious activity. While the user remains unaware of its presence, the overlay scans for the following potential threats:  
-  - Suspicious URL Redirections: Identifies and flags unusual redirects leading to fraudulent sites such as fake login pages or malware-laden websites designed to steal credentials.  
-  - Anomalies in URL Structures: Detects mismatched or altered domain names often used in typosquatting schemes to deceive users.  
-  - Fake Forms or Hidden Scripts: Flags malicious forms crafted to capture sensitive personal information and hidden scripts that may compromise user data or devices.
+- Suspicious URL Redirections: Identifies and flags unusual redirects leading to fraudulent sites such as fake login pages or malware-laden websites designed to steal credentials.  
+- Anomalies in URL Structures: Phishing often involves manipulating domain names through typosquatting and homograph attacks. These tactic can be difficult for users to spot, but Phantom Overlay is designed to identify and thwart such deceptive activities in real-time.  
+- Fake Forms or Hidden Scripts: Flags malicious forms crafted to capture sensitive personal information and hidden scripts that may compromise user data or devices.
 
 - **String Matching for Typosquatting Detection:**  
-  Typosquatting involves attackers creating domain names similar to legitimate ones but containing slight, deliberate typos. Phantom Overlay combats this using sophisticated Levenshtein distance algorithms, which measure similarity between strings. This allows identification of slight differences in domain names users might overlook, such as "amaz0n.com" versus "amazon.com." Users are alerted to these subtle discrepancies in real time, enhancing protection.
+Typosquatting involves attackers creating domain names similar to legitimate ones but containing slight, deliberate typos. Phantom Overlay combats this using sophisticated Levenshtein distance algorithms, which measure similarity between strings. This allows identification of slight differences in domain names users might overlook. Users are alerted to these subtle discrepancies in real time, enhancing protection.
 
 - **Homograph Attack Detection Using Punycode:**  
-  Homograph attacks use characters from different alphabets that look nearly identical to Latin letters, tricking users into believing they are visiting trusted sites. For example, "google.com" might appear as "goog1e.com" using Cyrillic characters or "g00gle.com" by swapping Latin characters for others. These attacks are difficult to detect because altered domain names look almost identical to legitimate ones.  
-  The Phantom Overlay uses Punycode encoding, converting non-ASCII characters (e.g., Cyrillic or Greek letters) into ASCII-compatible format, enabling detection and flagging of homograph attacks. Upon detection, the system immediately alerts users, preventing access to fraudulent sites.
+Homograph attacks use characters from different alphabets that look nearly identical to Latin letters, tricking users into believing they are visiting trusted sites. These attacks are difficult to detect because altered domain names look almost identical to legitimate ones.  
+The Phantom Overlay uses Punycode encoding, converting non-ASCII characters (e.g., Cyrillic or Greek letters) into ASCII-compatible format, enabling detection and flagging of homograph attacks. Upon detection, the system immediately alerts users, preventing access to fraudulent sites.
 
 - **Detecting Fake CAPTCHA:**  
-  Phishing sites may replicate legitimate CAPTCHA systems to deceive users. String matching can help flag suspicious domain names related to CAPTCHA implementations. Behavioral analysis of user interactions with CAPTCHA (mouse movements, typing speed) can also reveal anomalies, distinguishing fake CAPTCHAs from real ones.
+Phishing sites may replicate legitimate CAPTCHA systems to deceive users. String matching can help flag suspicious domain names related to CAPTCHA implementations. Behavioral analysis of user interactions with CAPTCHA (mouse movements, typing speed) can also reveal anomalies, distinguishing fake CAPTCHAs from real ones.
 
-### Benefits of the Phantom Overlay System:
+### Key Benefits
 
 - **Zero Disruption to User Experience:**  
-  The Phantom Cyber-Space Overlay operates silently and continuously in the background, protecting users without interrupting their browsing or overwhelming them with alerts.
-
 - **Real-Time Alerts:**  
-  Users receive immediate notifications if suspicious activities such as URL redirection, typosquatting, or homograph attacks are detected.
-
 - **Enhanced Detection of Subtle Phishing Attacks:**  
-  The combination of string matching (Levenshtein distance) and Punycode encoding empowers the system to detect sophisticated phishing attempts that traditional security systems often miss.
-
-### Conclusion  
-The Phantom Cyber-Space Overlay is a cutting-edge phishing prevention system combining invisible, real-time monitoring with advanced algorithms for domain manipulation detection. By continuously scanning for threats like URL redirections, typosquatting, and homograph attacks, it provides essential security for users, increasing trust and confidence in their online interactions. With zero disruption to user experience and immediate alerts upon detecting threats, the Phantom Overlay ensures users can safely navigate the web without fear of falling victim to fraudulent websites.
-
+  
 
