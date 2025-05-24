@@ -168,6 +168,36 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
   - Monitor only sensitive endpoints (e.g., `/login`, `/payment`) to reduce overhead and false alarms.  
   AWS WAF will also be configured to log all traffic metadata and blocked request details into CloudWatch Logs for audit and further analysis.
 
+```python
+{
+    "Name": "BlockSuspiciousURLs",
+    "Priority": 1,
+    "Action": {
+        "Block": {}
+    },
+    "Statement": {
+        "ByteMatchStatement": {
+            "SearchString": "login.verify.reset",
+            "FieldToMatch": {
+                "UriPath": {}
+            },
+            "TextTransformations": [
+                {
+                    "Type": "LOWERCASE",
+                    "Priority": 0
+                }
+            ],
+            "PositionalConstraint": "CONTAINS"
+        }
+    },
+    "VisibilityConfig": {
+        "SampledRequestsEnabled": true,
+        "CloudWatchMetricsEnabled": true,
+        "MetricName": "SuspiciousURLBlock"
+    }
+}
+```
+
 ---
 
 ### 2. Secure Web Gateway (Zscaler / Cisco Umbrella)
@@ -228,7 +258,27 @@ def check_domain_reputation(url):
     # For demo, return "clean"
     return "clean"
 ```
+```
+from bs4 import BeautifulSoup
 
+def extract_ui_features(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    
+    # Example features: number of forms, hidden inputs, script tags
+    form_count = len(soup.find_all('form'))
+    hidden_inputs = len(soup.find_all('input', {'type': 'hidden'}))
+    script_count = len(soup.find_all('script'))
+    
+    # More advanced features can be added here
+    features = {
+        'form_count': form_count,
+        'hidden_inputs': hidden_inputs,
+        'script_count': script_count,
+    }
+    return features
+
+# Use these features as input to your AI model for classification
+```
 ---
 
 ### 4. DynamoDB, SQS, and Kinesis Firehose
@@ -244,8 +294,28 @@ def check_domain_reputation(url):
   - **CloudWatch:** We will aggregate logs and metrics from AWS WAF, Lambda invocations, DynamoDB operations, and SQS queue depth. Custom CloudWatch alarms will monitor anomalies such as spikes in flagged events or Lambda errors.  
   - **EventBridge:** We will configure EventBridge rules that listen for high-severity flagged events (e.g., anomaly score above a threshold) from the threat processing pipeline.  
   - **SNS:** Once EventBridge triggers an alert, SNS will push notifications instantly to security teams via email, SMS, or integration with communication platforms like Slack or Microsoft Teams.  
-  - Additionally, EventBridge will automate AWS WAF updates by programmatically adding IPs/domains or blocking suspicious URLs identified by the AI model, effectively creating a feedback loop to block new threats automatically.  
+  - Additionally, EventBridge will automate AWS WAF updates by programmatically adding IPs/domains or blocking suspicious URLs identified by the AI model, effectively creating a feedback loop to block new threats automatically.
 
+```python
+import boto3
+
+sns_client = boto3.client('sns')
+
+def lambda_handler(event, context):
+    # Extract details of blocked request from the event
+    blocked_request = event['detail']
+    
+    message = f"Blocked suspicious request: {blocked_request}"
+    
+    # Publish alert to SNS topic
+    sns_client.publish(
+        TopicArn='arn:aws:sns:region:account-id:phishing-alerts',
+        Message=message,
+        Subject='Phishing Alert Triggered'
+    )
+    return {'statusCode': 200}
+
+```
 ---
 
 ### 6. Punycode Conversion & IDN Normalization
