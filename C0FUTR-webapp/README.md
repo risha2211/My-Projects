@@ -1,5 +1,5 @@
 # 🌱 GREEN (C0FUTR): Campus Web App for Climate Action and Sustainability
-
+*Climate Hackathon*
 ## 🧭 Overview
 **GREEN** is a modern web-based platform that gamifies sustainability and climate action on college campuses.  
 It helps users track eco-behaviors, take part in challenges, and build community — all while reducing emissions and building campus resilience.
