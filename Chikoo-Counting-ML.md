@@ -126,7 +126,7 @@ Estimated number of chikoos: 130
 7. Operator retrieves counted fruits through the door.  
 8. Trapdoor reopens to resume operation.
 
-* The IR sensors emit infrared light and detect reflections to sense when a chikoo passes through the chute. When a single chikoo crosses, a single reflection is detected. If two or more chikoos attempt to pass simultaneously, the sensors detect multiple distinct reflections, signaling multiple objects. This sensor data is continuously transmitted to the microcontroller, which processes the signals in real time. Based on this input, the system updates the displayed count, ensuring an accurate tally by incrementing according to the number of detected fruits.
+*The IR sensors emit infrared light and detect reflections to sense when a chikoo passes through the chute. When a single chikoo crosses, a single reflection is detected. If two or more chikoos attempt to pass simultaneously, the sensors detect multiple distinct reflections, signaling multiple objects. This sensor data is continuously transmitted to the microcontroller, which processes the signals in real time. Based on this input, the system updates the displayed count, ensuring an accurate tally by incrementing according to the number of detected fruits.
 
 ---
 
