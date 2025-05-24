@@ -149,12 +149,16 @@ Estimated number of chikoos: 130
 
 ---
 
-**Total Prototype Cost:** ₹2071 INR  
+### Timeline Chart
+[🔗 Project Timeline Gantt Chart](https://www.youtube.com/watch?v=nXjRacMawRo)
+
+---
+
+## Total Project Cost:** ₹2071 INR  
 (All components sourced locally)
 
 
-### Timeline Chart
-[🔗 Project Timeline Gantt Chart](https://www.youtube.com/watch?v=nXjRacMawRo)
+
 
 
 
