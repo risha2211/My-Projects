@@ -1,5 +1,5 @@
 # Geospatial Applications
-
+*White Hat Jr.*
 ## Overview  
 Developed a robust Python-based geospatial application capable of visualizing and tracking any location worldwide using precise latitude and longitude coordinates. The project integrates multiple Python libraries to create an interactive, layered map with spatial analysis capabilities- all running locally or inside notebooks.
 
