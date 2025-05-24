@@ -98,7 +98,7 @@ Estimated number of chikoos: 130
 - Servo-operated trapdoor regulates fruit flow, closing temporarily when capacity is reached and reopening to resume counting.  
 - Retrieval door at the bottom allows collection of counted fruits.
 
-## AutoCAD Model- Isometric View
+## AutoCAD Model
 
 ![Image](https://github.com/user-attachments/assets/33754803-0c90-4e26-95b4-3becb76a52ea)
 ![Image](https://github.com/user-attachments/assets/ca4c80ee-3805-40ad-8a07-b3404253b5f0)
