@@ -17,7 +17,7 @@ It helps users track eco-behaviors, take part in challenges, and build community
 
 ---
 
-##📝 Core Features
+## 📝 Core Features
 
 ### 1. Personalized Sustainability Tracker
 - Set and monitor eco-goals (waste, energy, water, carbon)
