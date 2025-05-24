@@ -43,11 +43,7 @@ These coordinates are visualized and ranked for rapid, data-driven hiring.
 
 ## Semantic Skill Matching Using Pre-trained Embeddings
 
-To evaluate how well a candidate’s skills match the job description, we use **pre-trained sentence embedding models** such as:
-
-- [Sentence-BERT (`all-MiniLM-L6-v2`)](https://www.sbert.net/)
-- [Universal Sentence Encoder (USE)](https://tfhub.dev/google/universal-sentence-encoder/4)
-- [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) *(if available and permitted)*
+To evaluate how well a candidate’s skills match the job description, we use [Sentence-BERT (`all-MiniLM-L6-v2`)](https://www.sbert.net/), a **pre-trained sentence embedding models** 
 
 These models convert unstructured text into high-dimensional vectors. We compute **cosine similarity** between candidate skill vectors and job description skill vectors to assess semantic closeness.
 
