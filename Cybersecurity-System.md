@@ -151,62 +151,78 @@ URL shorteners and link expiration are common tools used by attackers to obscure
 
 # Proposed Solution
 
-- **AI-powered phishing protection** leveraging AWS WAF, Lambda, and CloudWatch  
-- Detects **fake captchas, UI inconsistencies, and abnormal pop-ups**  
-- Uses **Punycode & IDN detection** to prevent URL spoofing  
-- **Monitors only sensitive user actions** (e.g., login, payment) for efficiency  
-- Provides **real-time alerts and automated blocking** via EventBridge & SNS  
+Our AI-powered phishing detection system leverages multiple AWS and cloud security tools to create a scalable, efficient, and real-time protective framework. Below is an elaborated description of how we will use each technology in detail.
 
 ---
 
-# Innovation & Uniqueness
+# Technologies Used and HOW We Will Use Them
 
-- Combines **AI with cloud security**, going beyond traditional URL filtering  
-- Offers **network-level protection** through integration with Zscaler, Cisco Umbrella, or AWS WAF  
-- Designed to be **scalable, efficient, and minimize false positives**
-
----
-
-# Technologies Used
-
-- **Cloud Security:** AWS WAF, Secure Web Gateway, Zscaler, Cisco Umbrella  
-- **AI & Processing:** AWS Lambda (Python), custom AI model for UI analysis  
-- **Storage & Processing:** DynamoDB, SQS, Kinesis Firehose  
-- **Monitoring & Alerts:** CloudWatch, EventBridge, SNS  
-- **Web Filtering:** Punycode Conversion, IDN Normalization  
+### 1. AWS WAF (Web Application Firewall)
+ 
+  We will configure AWS WAF to serve as the first line of defense by setting up custom rules that:  
+  - Block requests from IPs/domains flagged in threat intelligence feeds (using AWS Managed Rules and custom IP sets).  
+  - Enforce SSL validation by integrating AWS WAF with AWS Certificate Manager, rejecting requests with invalid or missing certificates.  
+  - Use regex matching to detect suspicious URL patterns, including URLs with Punycode or IDN characters.  
+  - Monitor only sensitive endpoints (e.g., `/login`, `/payment`) to reduce overhead and false alarms.  
+  AWS WAF will also be configured to log all traffic metadata and blocked request details into CloudWatch Logs for audit and further analysis.
 
 ---
 
-# Implementation Process
+### 2. Secure Web Gateway (Zscaler / Cisco Umbrella)
 
-1. **Traffic Filtering (AWS WAF + Secure Gateway):**  
-   Block malicious domains, verify SSL certificates, and detect suspicious URLs  
-
-2. **AI Website Analysis (Lambda + AI Model):**  
-   Extract HTML/CSS/JS content to detect fake captchas and UI anomalies  
-
-3. **Threat Processing (SQS + DynamoDB):**  
-   Store flagged data, analyze attack trends, and reduce false positives  
-
-4. **Real-Time Alerts (EventBridge + SNS):**  
-   Block malicious sites, notify administrators, and update firewall rules automatically  
+  We will deploy Secure Web Gateway solutions as part of the network infrastructure for DNS filtering and traffic monitoring:  
+  - DNS requests from client machines will be routed through Cisco Umbrella or Zscaler.  
+  - These services will block resolution of known malicious domains and redirect suspicious requests to a quarantine or warning page.  
+  - Integrate logs from these services into our central monitoring dashboard using APIs to correlate with AWS WAF data for comprehensive threat visibility.  
 
 ---
 
-# Feasibility
+### 3. AWS Lambda (Python) + AI Model for UI Analysis
 
-- **Scalable:** Utilizes AWS serverless services for efficient, real-time processing  
-- **Low Latency:** Focuses on monitoring only sensitive user actions, reducing overhead  
-- **AI-Driven Detection:** Improves phishing detection beyond traditional URL filters  
-- **Integration Ready:** Easily integrates with existing web security solutions like Zscaler and Cisco Umbrella  
+  - Upon detection of sensitive actions (login, payment) by AWS WAF, a trigger will invoke a Lambda function.  
+  - Lambda will programmatically scrape the webpage’s HTML, CSS, and JS assets either via a headless browser (e.g., Puppeteer/Playwright) or by using APIs exposed by the front-end.  
+  - The scraped content will be passed to a pre-trained AI model (deployed within Lambda or accessed via an API endpoint) that analyzes the UI components for anomalies such as:  
+    - Fake captchas that don’t function correctly or are visually inconsistent.  
+    - Hidden form fields or scripts designed to steal credentials.  
+    - Suspicious pop-ups or modal dialogs not consistent with legitimate UX patterns.  
+  - Lambda will assign an anomaly score to each interaction and send flagged results downstream for processing.  
 
 ---
 
-# Potential Challenges & Solutions
+### 4. DynamoDB, SQS, and Kinesis Firehose
 
-- **False Positives:** Continuous AI model training to improve accuracy over time  
-- **Cost Management:** Employs a serverless architecture to optimize pricing and resource usage  
-- **Compatibility:** Uses API-based integration for seamless compatibility with other security platforms  
+  - **SQS:** Lambda functions will asynchronously push flagged events into an SQS queue to decouple detection from further processing and to handle spikes in flagged activity smoothly.  
+  - **DynamoDB:** A backend service will poll the SQS queue and write detailed event data into DynamoDB tables designed with a schema optimized for fast querying and trend analysis. Event data includes: URLs, timestamps, anomaly scores, IP addresses, and user-agent info.  
+  - **Kinesis Firehose:** We will stream processed event data from DynamoDB or directly from the Lambda output into Amazon Kinesis Firehose for real-time analytics and visualization via tools such as Amazon QuickSight or custom dashboards. This allows security analysts to monitor threat trends in near real time.  
 
+---
 
+### 5. CloudWatch, EventBridge, and SNS for Monitoring and Alerts
+
+  - **CloudWatch:** We will aggregate logs and metrics from AWS WAF, Lambda invocations, DynamoDB operations, and SQS queue depth. Custom CloudWatch alarms will monitor anomalies such as spikes in flagged events or Lambda errors.  
+  - **EventBridge:** We will configure EventBridge rules that listen for high-severity flagged events (e.g., anomaly score above a threshold) from the threat processing pipeline.  
+  - **SNS:** Once EventBridge triggers an alert, SNS will push notifications instantly to security teams via email, SMS, or integration with communication platforms like Slack or Microsoft Teams.  
+  - Additionally, EventBridge will automate AWS WAF updates by programmatically adding IPs/domains or blocking suspicious URLs identified by the AI model, effectively creating a feedback loop to block new threats automatically.  
+
+---
+
+### 6. Punycode Conversion & IDN Normalization
+ 
+  - Before any URL is processed by our detection system, it will be normalized:  
+    - Convert any Unicode characters to their ASCII-compatible Punycode representations using libraries like `idna` in Python.  
+    - Normalize internationalized domain names to their canonical form to prevent homograph attacks.  
+  - Our AI model and URL filters will then analyze these normalized URLs to detect spoofing attempts that use visually similar characters to impersonate legitimate domains.  
+
+---
+
+# Implementation Workflow Overview
+
+1. **Traffic Filtering:** Incoming requests pass through AWS WAF and Secure Web Gateway. Suspicious URLs or IPs are blocked upfront; requests to sensitive endpoints trigger further analysis.  
+2. **Trigger AI Analysis:** Lambda is triggered on sensitive actions, scraping UI data and running anomaly detection models.  
+3. **Queue & Store:** Flagged events are placed in SQS, processed and stored in DynamoDB for persistence and historical analytics.  
+4. **Real-Time Analytics:** Kinesis Firehose streams data to dashboards; CloudWatch monitors system health.  
+5. **Alerting & Automated Blocking:** EventBridge listens for high-risk events, triggering SNS alerts and auto-updating WAF rules.  
+6. **Continuous Feedback:** Data collected is used to retrain AI models periodically and refine detection rules to reduce false positives.
+
+---
 
