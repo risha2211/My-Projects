@@ -15,7 +15,7 @@ PhishHook doesn’t get in the way of regular users. It’s built to be lightwei
 
 **PhishHook** introduces a next-generation security framework that merges **AI-enhanced digital fingerprinting** with **real-time SSL certificate validation**, providing precise, adaptive, and robust protection for banking systems.
 
-### What is Digital DNA Fingerprinting?
+### 🧬 What is Digital DNA Fingerprinting?
 
 This technology captures a unique behavioral and structural signature—or “fingerprint”—of every legitimate website by analyzing:
 
