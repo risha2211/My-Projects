@@ -65,7 +65,7 @@ print("Estimated number of chikoos:", round(N_chikoos), "≈", int(round(N_chiko
 Volume of container box: 45000 cm³
 Volume of one chikoo: 220.893 cm³
 Effective usable volume (RCP 64%): 28800.0 cm³
-Estimated number of chikoos: 130 ≈ 130
+Estimated number of chikoos: 130
 ```
 --- 
 
