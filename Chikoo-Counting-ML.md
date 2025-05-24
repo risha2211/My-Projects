@@ -81,6 +81,9 @@ Estimated number of chikoos: 130
 | 4x4 Matrix Keypad   | User input for custom count                    |
 | MG996R Servo Motor  | Controls trapdoor opening/closing             |
 
+## Circuit Connection Diagram
+![Image](https://github.com/user-attachments/assets/370d1497-11e4-4dc2-a2b4-cd35b2286e93)
+
 ---
 
 ## Software Components
@@ -145,6 +148,10 @@ Estimated number of chikoos: 130
 - Maintenance or after-sales service.
 
 ---
+
+**Total Prototype Cost:** ₹2071 INR  
+(All components sourced locally)
+
 
 ### Timeline Chart
 [🔗 Project Timeline Gantt Chart](https://www.youtube.com/watch?v=nXjRacMawRo)
