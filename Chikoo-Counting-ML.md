@@ -87,7 +87,7 @@ Estimated number of chikoos: 130
 - **Edge Impulse:** ML model training on 500+ chikoo images for object detection.
 ![Image](https://github.com/user-attachments/assets/9dc42fe5-ea81-493f-b624-25210ab797f1)
 - **Arduino IDE (C++):** Embedded software to integrate sensors, ML model output, display, and mechanical controls.
-[Machine Learning Code](https://www.youtube.com/watch?v=uDzeQ00ZcTI)
+[Machine Learning Code](https://www.youtube.com/watch?v=uDzeQ00ZcTI)  
 [ML Running (Mac)](https://www.youtube.com/watch?v=ONefa4cJxFY)
 
 ---
