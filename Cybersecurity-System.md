@@ -219,6 +219,17 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
     - Suspicious pop-ups or modal dialogs not consistent with legitimate UX patterns.  
   - Lambda will assign an anomaly score to each interaction and send flagged results downstream for processing.
 
+```json
+{
+  "source": ["aws.waf"],
+  "detail-type": ["AWS WAF Blocked Request"],
+  "detail": {
+    "ruleGroupId": ["example-rule-group-id"]
+  }
+}
+
+```
+
 ```python
 import boto3
 import requests
