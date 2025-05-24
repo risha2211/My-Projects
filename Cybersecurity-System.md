@@ -246,20 +246,20 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
 
 ## Revenue Streams
 
-1️⃣ **Subscription Model**  
+1. **Subscription Model**  
 - Offer monthly and annual subscription plans tailored to the customer’s website traffic volume.  
 - Pricing tiers scale with the number of sensitive transactions monitored (e.g., logins, payments).  
 - Includes standard phishing detection and blocking features, with SLAs for uptime and support.
 
-2️⃣ **Pay Per Use**  
+2️. **Pay Per Use**  
 - Charge customers based on the number of phishing attempts detected and blocked in real-time.  
 - Ideal for businesses with fluctuating traffic or seasonal spikes, providing cost flexibility.
 
-3️⃣ **Enterprise Licensing**  
+3️. **Enterprise Licensing**  
 - Provide customizable security solutions for large enterprises requiring dedicated support, integration, and compliance features.  
 - Includes on-premise deployment options, API access for SIEM integration, and tailored AI models for industry-specific threats.
 
-4️⃣ **Freemium Model**  
+4️. **Freemium Model**  
 - Basic phishing protection available for free, covering essential URL filtering and minimal UI anomaly detection.  
 - Premium features such as advanced AI UI analysis, real-time alerts, and automated blocking available as paid add-ons.
 
