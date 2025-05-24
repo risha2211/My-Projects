@@ -154,7 +154,7 @@ Estimated number of chikoos: 130
 
 ---
 
-## Total Project Cost:** ₹2071 INR  
+## Total Project Cost: ₹2071 INR  
 (All components sourced locally)
 
 
