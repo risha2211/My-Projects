@@ -149,4 +149,64 @@ Monitoring the expiration of URLs is a proactive defense against short-lived phi
 4. **Comprehensive Protection Against Deceptive Link Strategies:**  
 URL shorteners and link expiration are common tools used by attackers to obscure malicious destinations. By integrating these monitoring tactics with Superfluid detection, websites and systems can proactively detect and block these deceptive strategies, providing users a safer online experience.
 
+# Proposed Solution
+
+- **AI-powered phishing protection** leveraging AWS WAF, Lambda, and CloudWatch  
+- Detects **fake captchas, UI inconsistencies, and abnormal pop-ups**  
+- Uses **Punycode & IDN detection** to prevent URL spoofing  
+- **Monitors only sensitive user actions** (e.g., login, payment) for efficiency  
+- Provides **real-time alerts and automated blocking** via EventBridge & SNS  
+
+---
+
+# Innovation & Uniqueness
+
+- Combines **AI with cloud security**, going beyond traditional URL filtering  
+- Offers **network-level protection** through integration with Zscaler, Cisco Umbrella, or AWS WAF  
+- Designed to be **scalable, efficient, and minimize false positives**
+
+---
+
+# Technologies Used
+
+- **Cloud Security:** AWS WAF, Secure Web Gateway, Zscaler, Cisco Umbrella  
+- **AI & Processing:** AWS Lambda (Python), custom AI model for UI analysis  
+- **Storage & Processing:** DynamoDB, SQS, Kinesis Firehose  
+- **Monitoring & Alerts:** CloudWatch, EventBridge, SNS  
+- **Web Filtering:** Punycode Conversion, IDN Normalization  
+
+---
+
+# Implementation Process
+
+1. **Traffic Filtering (AWS WAF + Secure Gateway):**  
+   Block malicious domains, verify SSL certificates, and detect suspicious URLs  
+
+2. **AI Website Analysis (Lambda + AI Model):**  
+   Extract HTML/CSS/JS content to detect fake captchas and UI anomalies  
+
+3. **Threat Processing (SQS + DynamoDB):**  
+   Store flagged data, analyze attack trends, and reduce false positives  
+
+4. **Real-Time Alerts (EventBridge + SNS):**  
+   Block malicious sites, notify administrators, and update firewall rules automatically  
+
+---
+
+# Feasibility
+
+- **Scalable:** Utilizes AWS serverless services for efficient, real-time processing  
+- **Low Latency:** Focuses on monitoring only sensitive user actions, reducing overhead  
+- **AI-Driven Detection:** Improves phishing detection beyond traditional URL filters  
+- **Integration Ready:** Easily integrates with existing web security solutions like Zscaler and Cisco Umbrella  
+
+---
+
+# Potential Challenges & Solutions
+
+- **False Positives:** Continuous AI model training to improve accuracy over time  
+- **Cost Management:** Employs a serverless architecture to optimize pricing and resource usage  
+- **Compatibility:** Uses API-based integration for seamless compatibility with other security platforms  
+
+
 
