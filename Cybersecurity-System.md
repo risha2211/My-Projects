@@ -219,17 +219,6 @@ Our AI-powered phishing detection system leverages multiple AWS and cloud securi
     - Suspicious pop-ups or modal dialogs not consistent with legitimate UX patterns.  
   - Lambda will assign an anomaly score to each interaction and send flagged results downstream for processing.
 
-```json
-{
-  "source": ["aws.waf"],
-  "detail-type": ["AWS WAF Blocked Request"],
-  "detail": {
-    "ruleGroupId": ["example-rule-group-id"]
-  }
-}
-
-```
-
 ```python
 import boto3
 import requests
@@ -306,6 +295,17 @@ def extract_ui_features(html_content):
   - **EventBridge:** We will configure EventBridge rules that listen for high-severity flagged events (e.g., anomaly score above a threshold) from the threat processing pipeline.  
   - **SNS:** Once EventBridge triggers an alert, SNS will push notifications instantly to security teams via email, SMS, or integration with communication platforms like Slack or Microsoft Teams.  
   - Additionally, EventBridge will automate AWS WAF updates by programmatically adding IPs/domains or blocking suspicious URLs identified by the AI model, effectively creating a feedback loop to block new threats automatically.
+
+```json
+{
+  "source": ["aws.waf"],
+  "detail-type": ["AWS WAF Blocked Request"],
+  "detail": {
+    "ruleGroupId": ["example-rule-group-id"]
+  }
+}
+
+```
 
 ```python
 import boto3
