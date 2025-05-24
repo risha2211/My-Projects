@@ -17,7 +17,7 @@ PhishHook doesn’t get in the way of regular users. It’s built to be lightwei
 
 ### 🧬 What is Digital DNA Fingerprinting?
 
-This technology captures a unique behavioral and structural signature—or “fingerprint”—of every legitimate website by analyzing:
+This technology captures a unique behavioral and structural signature or a “fingerprint” of every legitimate website by analyzing:
 
 - Domain structure  
 - Source code (HTML/CSS/JS)  
