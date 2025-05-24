@@ -47,10 +47,8 @@ Invalid, expired, or mismatched certificates immediately signal possible phishin
 
 - Early detection of fake, misconfigured, or expired certificates  
 - Protection from SSL stripping and downgrade attacks  
-- Enhanced fraud detection, even when visual mimicry is sophisticated  
-- Real-time alerts to users and system admins before harm is done  
-- Stronger user trust through transparent, ongoing validation  
-- Website owner protection, with automated notifications on certificate issues  
+- Enhanced fraud detection
+- Real-time alerts to users before harm is done  
 
 PhishHook’s fingerprinting and certificate validation system doesn’t just stop phishing—it evolves faster than attackers can adapt. By placing behavior, structure, and trust under constant AI surveillance, we secure the web at its weakest points—before the first click goes wrong.
 
@@ -74,8 +72,8 @@ Phishing sites may replicate legitimate CAPTCHA systems to deceive users. String
 
 ### Key Benefits
 
-- **Zero Disruption to User Experience:**  
-- **Real-Time Alerts:**  
-- **Enhanced Detection of Subtle Phishing Attacks:**  
+- Zero Disruption to User Experience  
+- Real-Time Alerts  
+- Enhanced Detection of Subtle Phishing Attacks  
   
 
