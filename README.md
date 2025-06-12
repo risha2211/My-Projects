@@ -1,4 +1,4 @@
-# 🚀 My Projects Portfolio
+# 🚀 Projects Portfolio
 
 Welcome to my project portfolio! Below is a list of projects I've worked on in detail.  
 Click on any project to explore its full documentation. 👇
