@@ -161,8 +161,8 @@ Estimated number of chikoos: 130
 
 This project was built in collaboration with:
 
-[@sidkm18](https://github.com/sidkm18)
-[@sohxmm](https://github.com/sohxmm)  
+- [@sidkm18](https://github.com/sidkm18)
+- [@sohxmm](https://github.com/sohxmm)  
 
 Also, check out my friend’s repository for a more in-depth look at the project and its code [View full project](https://github.com/Sidkm18/Chikoo_Counter/tree/main/sid3343_project_1_inferencing)
 
