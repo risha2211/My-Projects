@@ -157,6 +157,8 @@ Estimated number of chikoos: 130
 ### Total Project Cost: ₹2071 INR  
 (All components sourced locally)
 
+---
+
 This project was built in collaboration with:
 
 [@sidkm18](https://github.com/sidkm18)
